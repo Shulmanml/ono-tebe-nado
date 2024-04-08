@@ -3,9 +3,7 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   min-width: 105px;
-  padding: 90px 24px 100px;
-  justify-items: center;
-  align-items: center;
+  padding: 92px 24px 94px;
 }
 
 .header__logo {
@@ -16,21 +14,26 @@
 
 .header__links-list {
   display: flex;
-  gap: 32px;
+  gap: 30px;
   list-style: circle;
+  padding: 42px 40px 40px 27px;
+}
+
+.header__links-list-item {
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
-  letter-spacing: 1px;
-  text-underline-offset: 5px;
+  letter-spacing: 0.01em;
+  text-underline-offset: 4px;
 }
 
 .header__links-list-item_no-bullit {
   list-style: none;
 }
 
-.header_link.header__link_active {
+.header__link_active {
   text-decoration: none;
+  letter-spacing: 0;
 }
 
 .address {
@@ -42,13 +45,13 @@
   line-height: 24px;
   text-align: left;
   text-underline-offset: 5px;
-  padding-right: 65px;
   font-style: normal;
 }
 
 .address.header__address {
   justify-self: end;
-  padding-right: 65px;
+  padding-top: 3px;
+  padding-right: 68px;
 }
 
 /*Заголовок*/
@@ -123,7 +126,7 @@
 }
 
 .bet-button {
-  font-family: Raleway;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
   color: white;
   font-size: 22px;
   font-weight: 500;
@@ -143,7 +146,8 @@
 }
 
 .lots__heading {
-  margin: 0px 891px 28px 40px;
+  margin-left: 40px;
+  margin-bottom: 28px;
   font-size: 40px;
   font-weight: 700;
   line-height: 47px;
@@ -214,7 +218,9 @@
   font-weight: 400;
   line-height: 23px;
   text-align: left;
-  padding: 30px 820px 2px 40px;
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-bottom: 2px;
   text-underline-offset: 5px;
 }
 
@@ -284,13 +290,13 @@
 .footer__menu-list {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  padding: 1px 125px 33px 165px;
   list-style: none;
   text-underline-offset: 5px;
 }
 
-.footer__menu {
+.footer__menu-link {
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
